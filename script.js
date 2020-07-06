@@ -29,9 +29,9 @@ function computerPlay() {
     return computerChoice;
 }
 
-//this function is called implicitly from the Update function each time Player makes a choice.
+//this function is called implicitly from the Update() function each time Player makes a choice.
 //the function plays a round of the game and then returns a value that is passed on the Update function. 
-//the "playerSelection" argument is harded-coded to each of the rock/paper/scissors HTML button tags (see lines 34-36 of index.html)
+//the "playerSelection" argument is harded-coded to each of the rock/paper/scissors HTML button tags (see lines 34-36 of index.html file)
 function playRound(playerSelection) {
     computerSelection = computerPlay();        
     
