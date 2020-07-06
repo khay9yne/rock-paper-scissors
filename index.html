@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock-Paper-Scissors</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="gameBox">
+            <p></p>
+            <h1><u>Rock-Paper-Scissors Game</u></h1>
+            <div id="controlBox">
+                <div><hr></div>
+                <div id="div4">                    
+                    <button id="round1" onclick="oneRoundGame()">1-Off Game</button>
+                    <button id="game1" onclick="fiveRoundGame()">5-Round Game</button>
+                    <button id="reset1" onclick="resetGame()">Reset</button>                    
+                </div>
+                <div><hr></div>
+            </div>
+            <p></p>
+            <div id="playBox">
+                <div id="div2">
+                    <div id="d2a">
+                        <div id="d2ax"><p style="font-size: 1.35rem;"><u>YOUR SCORE</u></p></div>
+                        <div id="d2ay"></div>
+                    </div><hr>
+                    <div id="d2b">
+                        <div id="d2bx"><p style="font-size: 1.35rem;"><u>COMPUTER SCORE</u></p></div>
+                        <div id="d2by"></div>
+                    </div>
+                </div>
+                <div id="div3">
+                    <button id="rock1" class="btn" onclick="update(playRound(Rock))">Rock</button>
+                    <button id="paper1" class="btn" onclick="update(playRound(Paper))">Paper</button>
+                    <button id="scissors1" class="btn" onclick="update(playRound(Scissors))">Scissors</button>
+                </div>               
+            </div>
+            <p></p>
+            <div id="displayBox">
+                <div id="div1">
+                    <div id=pane1></div>
+                    <div id=pane2></div>
+                </div>
+                <div id=break1><hr></div>
+                <div id=callerBox>
+                    <div id=pane4></div>
+                </div>                
+            </div>
+            <div id="comnt">
+                <p><i>At the end of game play, please click "Reset" to clear and reset game."</i></p>
+            </div>
+            <div id="lastBox">
+                <p>Copyright (c) Kingsley Ezenwaka 2020</p>
+            </div>
+        </div>
+        <!-- partial -->
+        <script  src="./script.js"></script>
+    </body>
+</html>
